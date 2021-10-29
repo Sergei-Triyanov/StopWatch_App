@@ -1,0 +1,25 @@
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 6px;
+    color: #5bcbff;
+    cursor: default;
+    pointer-events: none;
+	user-select: none;
+    font-size: 16px;
+}
+
+.item + .item{
+    margin-top: 10px;
+}
+
+@media (max-width: 540px) {
+    .item{
+        font-size: 12px;
+    }
+
+    .item + .item{
+        margin-top: 4px;
+    }
+}
